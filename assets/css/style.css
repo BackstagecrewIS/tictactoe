@@ -3,7 +3,81 @@
 /*------------------------- Container ----------------------- */
 
 .container {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+}
+
+/*------------------------- Game Board ----------------------- */
+
+.game-board {
+    height: 75px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.game-square-1 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-2 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-3 {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-4 {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-5 {
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-6 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-7 {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-8 {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-square-9 {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
 }
