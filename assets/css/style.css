@@ -3,17 +3,21 @@
 /*------------------------- Container ----------------------- */
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+    width: 1000px;
     padding: 0;
+    margin: 0 auto;
+}
+
+/*------------------------- Headings ----------------------- */
+
+h1, h2 {
+    text-align: center;
 }
 
 /*------------------------- Game Board ----------------------- */
 
 .game-board {
     height: 75px;
-    max-width: 80%;
-    margin: 0 auto;
 }
 
 .game-square-1 {
