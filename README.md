@@ -4,7 +4,7 @@
 A basic website for a Noughts and Crosses game using HTML, CSS and a Bootstrap framework with Javascript functions to run the game.
 It is designed to be used on any device.
 
-![Alexandra Hotel](/assets/images/alexandra-outside.jpg "Alexandra Hotel Exterior")
+![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
 
 #### Table of Contents
 
@@ -113,7 +113,8 @@ The links will all open in the same tab.
 **What will the finished product look like? What colors, typography, and design elements will we use?**
 Wireframes for each of the pages are below:
 
-<a href="/assets/wireframes/index.png" target="_blank">index.html Wireframe</a>
+<a href="/assets/wireframes/wireframe-main.jpg" target="_blank">Main game page wireframe</a>
+<a href="/assets/wireframes/wireframe-instructions.jpg" target="_blank">Game instructions page wireframe</a>
 
 
 The colour scheme 
