@@ -10,53 +10,60 @@
     <script src="assets/js/game.js"></script>
     <title>Noughts And Crosses</title>
 </head>
-<body>
-    <header class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <h1>Noughts & Crosses</h1>
-                    <h2>A simple game demonstration</h2>
-                </div>
+<body class="container">
+    <header class="row">
+        <div class="col-md-12">
+            <div>
+                <h1>Noughts & Crosses</h1>
+                <h2>A simple game demonstration</h2>
             </div>
-        </div>  
+        </div>
     </header>
-    <section class="container">
+    <div class="container" id="top-buttons">
+        <div class="row text-center">
+          <div class="col-6">
+            <button type="button" class="btn btn-success" id="new_game">New Game</button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-info" id="instructions">Instructions</button>
+          </div>
+        </div>
+    </div>
+    <section>
         <div class="row game-board">
-            <div class="game-square-1 col"><span><i class="fa-solid fa-o"></i></span></div>
-            <div class="game-square-2 col"><span><i class="fa-solid fa-x"></i></span></div>
-            <div class="game-square-3 col"><span><i class="fa-solid fa-o"></i></span></div>
+            <div class="square game-square-1 col"><span><i class="fa-solid fa-o"></i></span></div>
+            <div class="square game-square-2 col"><span><i class="fa-solid fa-x"></i></span></div>
+            <div class="square game-square-3 col"><span><i class="fa-solid fa-o"></i></span></div>
         </div>
         <div class="row game-board">
-            <div class="game-square-4 col"><span><i class="fa-solid fa-x"></i></span></div>
-            <div class="game-square-5 col"><span><i class="fa-solid fa-o"></i></span></div>
-            <div class="game-square-6 col"><span><i class="fa-solid fa-x"></i></span></div>
+            <div class="square game-square-4 col"><span><i class="fa-solid fa-x"></i></span></div>
+            <div class="square game-square-5 col"><span><i class="fa-solid fa-o"></i></span></div>
+            <div class="square game-square-6 col"><span><i class="fa-solid fa-x"></i></span></div>
         </div>
         <div class="row game-board">
-            <div class="game-square-7 col"><span><i class="fa-solid fa-o"></i></span></div>
-            <div class="game-square-8 col"><span><i class="fa-solid fa-x"></i></span></div>
-            <div class="game-square-9 col"><span><i class="fa-solid fa-o"></i></span></div>
+            <div class="square game-square-7 col"><span><i class="fa-solid fa-o"></i></span></div>
+            <div class="square game-square-8 col"><span><i class="fa-solid fa-x"></i></span></div>
+            <div class="square game-square-9 col"><span><i class="fa-solid fa-o"></i></span></div>
         </div>
-    
     </section>
-    <!-- <section class="container">
-        <div class="game-board row">
-            <div class="game-square-1 col"><span><i class="fa-solid fa-o"></i></span></div>
-            <div class="game-square-2 col"><span><i class="fa-solid fa-x"></i></span></div>
-            <div class="game-square-3 col"><span><i class="fa-solid fa-o"></i></span></div>
+    <div class="container" id="bottom-button">
+        <div class="row text-center">
+          <div class="col-12">
+            <button type="button" class="btn btn-warning" id="reset">Reset Scores</button>
+          </div>
         </div>
-        <div class="game-board row">
-            <div class="game-square-4 col"><span><i class="fa-solid fa-x"></i></span></div>
-            <div class="game-square-5 col"><span><i class="fa-solid fa-o"></i></span></div>
-            <div class="game-square-6 col"><span><i class="fa-solid fa-x"></i></span></div>
+    </div>  
+    <div class="container" id="scores">
+        <div class="row text-center">
+            <div class="col-6">
+                <span><i class="fa-solid fa-x"></i> wins : 0</span>
+            </div>
+            <div class="col-6">
+                <span><i class="fa-solid fa-o"></i> wins : 0</span>
+            </div>
         </div>
-        <div class="game-board row">
-            <div class="game-square-7 col"><span><i class="fa-solid fa-o"></i></span></div>
-            <div class="game-square-8 col"><span><i class="fa-solid fa-x"></i></span></div>
-            <div class="game-square-9 col"><span><i class="fa-solid fa-o"></i></span></div>
-        </div>
+    </div>  
     
-    </section> -->
     <footer>
         
     </footer>
