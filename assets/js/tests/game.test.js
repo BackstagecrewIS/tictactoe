@@ -1,8 +1,8 @@
-const getWinners = require("../game");
+const resetGame = require("../game");
 
-describe ("Check getWinners function", () => {
-    test("Should retrieve first winning combinations from wins array", () => {
-        expect(getWinners(0)).toEqual([1,2,3]);
+describe ("Check resetGame function", () => {
+    test("The player moves arrays should be empty", () => {
+        expect(omoves.length).toEqual(0);
     })
 });
 
