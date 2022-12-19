@@ -10,6 +10,9 @@ const wins = [
     [3,5,7]
 ];
 
+omoves = [];
+xmoves = [];
+
 resetGame();
 playerTurn = 1;
 
@@ -17,8 +20,8 @@ playerTurn = 1;
  * Resets the game parameters ready for a new game
  */
 function resetGame() {
-    const omoves = [];
-    const xmoves = [];
+    omoves = [];
+    xmoves = [];
     }
 
 // --------------- Event listeners -----------------------------
@@ -28,10 +31,16 @@ let squares = document.getElementsByClassName('square');
         square.addEventListener("click", function() {
             if (playerTurn == 1) {
                 this.textContent = "O";
+                omoves.push(square.id*1);
+                console.log(square.id*1);
+                console.log(omoves);
             } else {
                 this.textContent = "X";
+                xmoves.push(square.id*1);
+                console.log(square.id*1);
+                console.log(xmoves);
             };
-            changePlayerTurn();
+            checkForWin();
         });
 
         square.addEventListener("mouseover", function() {
@@ -49,7 +58,7 @@ let squares = document.getElementsByClassName('square');
             if (this.getAttribute("data-type") === "new-game") {
                 console.log("New Game"); 
             } else if (this.getAttribute("data-type") === "instructions") {
-                console.log("Instructions"); 
+                showInstructions(); 
             } else if (this.getAttribute("data-type") === "reset") {
                 console.log("Reset");
             } else {
@@ -73,9 +82,30 @@ function changePlayerTurn() {
 }
 
 function checkForWin() {
-
+    for (let win of wins) {
+        if (checkSubset(omoves, win)) {
+            console.log("O WINS");
+        }
+        
+        if (checkSubset(xmoves, win)) {
+            console.log("X WINS");
+        }
+    }
+    changePlayerTurn();
 }
 
+
+let checkSubset = (movesArray, winsArray) => {
+    return winsArray.every((element) => {
+        return movesArray.includes(element)
+    })
+}
+
+ 
+
+function showInstructions() {
+    alert("POP UP INSTRUCTIONS");
+}
 
 
 module.exports = resetGame;
