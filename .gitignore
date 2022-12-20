@@ -1,3 +1,4 @@
 node_modules/
 package-lock.json
-package.jsongitpod.yml
+package.json
+gitpod.yml
