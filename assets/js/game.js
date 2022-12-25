@@ -11,12 +11,27 @@ const wins = [
     [3,5,7]
 ];
 
-omoves = [];
-xmoves = [];
-playedMoves = [];
+let oWins = 0;
+let xWins = 0;
+let gamesPlayed = 0;
+let omoves = [];
+let xmoves = [];
+let playedMoves = [];
 
 playerTurn = "O";
 gameNumber = 1;
+
+// ---------------------------------------- New Game
+
+function newGame() {
+  clearBoard();
+  emptyArrays();
+  addGameCounter();
+  if (gamesPlayed % 2 == 0) {
+    playerTurn = "X";
+  }
+}
+
 
 // ---------------------------------------- Display player turn
 
@@ -24,8 +39,6 @@ function displayPlayerTurn(player) {
 let moveDisplay = document.getElementById('playerToPlay');
 moveDisplay.innerHTML=`${player} to play`;
 }
-
-
 
 // ---------------------------------------- Player move
 
@@ -68,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (let button of buttons) {
           button.addEventListener("click", function() {
               if (this.getAttribute("data-type") === "new-game") {
-                  resetGame();
+                  newGame();
               } else if (this.getAttribute("data-type") === "instructions") {
                   showInstructions(); 
               } else if (this.getAttribute("data-type") === "reset") {
@@ -80,8 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }); 
       };   
 });
-  
-
 
 // ---------------------------------------- Check for valid move
 
@@ -100,31 +111,32 @@ function addPlayedMove(move) {
   playedMoves.push(move);
 }
 
-// ---------------------------------------- Display player to move
-
 // ---------------------------------------- Check for win
 
 function checkForWin() {
   for (let win of wins) {
       if (checkSubset(omoves, win)) {
           console.log("O WINS");
+          addOWin();
           newGame();
       }
       
       if (checkSubset(xmoves, win)) {
           console.log("X WINS");
+          addXWin()
           newGame();        
       }
   }
   changePlayerTurn();
 }
 
+// ---------------------------------------- Check moves against winning combinations
+
 let checkSubset = (movesArray, winsArray) => {
   return winsArray.every((element) => {
       return movesArray.includes(element)
   })
 }
-
 
 // ---------------------------------------- Change player turn
 
@@ -139,11 +151,48 @@ function changePlayerTurn() {
 
 // ---------------------------------------- Display winner
 
+
+
 // ---------------------------------------- Add to winner total
+
+function addOWin() {
+  oWins ++;
+}
+
+function addXWin() {
+  xWins ++;
+}
+
+// ---------------------------------------- Update Win Total Displays
+
+function displayWinTotals() {
+  let oTotal = document.getElementById('o-wins');
+  oTotal.innerHTML=`O wins : ${oWins} `;
+  let xTotal = document.getElementById('x-wins');
+  xTotal.innerHTML=`X wins : ${xWins} `;
+  }
+  
 
 // ---------------------------------------- Empty move arrays
 
+function emptyArrays() {
+  omoves.length = 0;
+  xmoves.length = 0;
+  playedMoves.length = 0;
+}
+
+
 // ---------------------------------------- Increment game counter
+
+function addGameCounter() {
+  gamesPlayed ++;
+}
 
 // ---------------------------------------- Clear board
 
+function clearBoard() {
+  let squares = document.getElementsByClassName('square');
+  for (let square of squares) {
+    square.innerHTML = "";
+    };
+  };
