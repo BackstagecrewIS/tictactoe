@@ -1,5 +1,6 @@
 // ---------------------------------------- Initialise variables
 
+// ------- All possible winning combinations -------
 const wins = [
     [1,2,3],
     [4,5,6],
@@ -11,15 +12,14 @@ const wins = [
     [3,5,7]
 ];
 
-let oWins = 0;
-let xWins = 0;
-let gamesPlayed = 0;
-let omoves = [];
-let xmoves = [];
-let playedMoves = [];
+let oWins = 0;          // Count of player O wins
+let xWins = 0;          // Count of player X wins
+let gamesPlayed = 0;    // Count of all games played
+let omoves = [];        // Define empty player O moves array
+let xmoves = [];        // Define empty player X moves array
+let playedMoves = [];   // Define empty moves array
 
-playerTurn = "O";
-gameNumber = 1;
+playerTurn = "O";       // Set the player O to begin the first game
 
 // ---------------------------------------- New Game
 
@@ -29,9 +29,35 @@ function newGame() {
   addGameCounter();
   if (gamesPlayed % 2 == 0) {
     playerTurn = "X";
+  } else {
+    playerTurn = "O";
   }
 }
 
+// ---------------------------------------- Clear board
+
+function clearBoard() {
+  let squares = document.getElementsByClassName('square');
+  for (let square of squares) {
+    square.backgroundColor = "white";
+    square.color = "black";
+    square.innerHTML = "";
+    };
+  };
+
+// ---------------------------------------- Empty move arrays
+
+function emptyArrays() {
+  omoves.length = 0;
+  xmoves.length = 0;
+  playedMoves.length = 0;
+}
+
+// ---------------------------------------- Increment game counter
+
+function addGameCounter() {
+  gamesPlayed ++;
+}
 
 // ---------------------------------------- Display player turn
 
@@ -116,15 +142,17 @@ function addPlayedMove(move) {
 function checkForWin() {
   for (let win of wins) {
       if (checkSubset(omoves, win)) {
+          let winningLine = win;
           console.log("O WINS");
+          displayWinningLine(winningLine);
           addOWin();
-          newGame();
       }
       
       if (checkSubset(xmoves, win)) {
-          console.log("X WINS");
-          addXWin()
-          newGame();        
+        let winningLine = win;
+        console.log("X WINS");
+        displayWinningLine(winningLine);
+        addXWin();
       }
   }
   changePlayerTurn();
@@ -149,18 +177,25 @@ function changePlayerTurn() {
   displayPlayerTurn(playerTurn);
 }
 
-// ---------------------------------------- Display winner
+// ---------------------------------------- Display winning line
 
-
+function displayWinningLine(line) {
+  for (let marker of line) {
+    document.getElementById(marker).style.backgroundColor = "gold";
+    
+  }
+}
 
 // ---------------------------------------- Add to winner total
 
 function addOWin() {
   oWins ++;
+  document.getElementById("o-wins").innerText = "O wins: " + oWins;
 }
 
 function addXWin() {
   xWins ++;
+  document.getElementById("x-wins").innerText = "X wins: " + xWins;
 }
 
 // ---------------------------------------- Update Win Total Displays
@@ -173,26 +208,6 @@ function displayWinTotals() {
   }
   
 
-// ---------------------------------------- Empty move arrays
-
-function emptyArrays() {
-  omoves.length = 0;
-  xmoves.length = 0;
-  playedMoves.length = 0;
-}
 
 
-// ---------------------------------------- Increment game counter
 
-function addGameCounter() {
-  gamesPlayed ++;
-}
-
-// ---------------------------------------- Clear board
-
-function clearBoard() {
-  let squares = document.getElementsByClassName('square');
-  for (let square of squares) {
-    square.innerHTML = "";
-    };
-  };
