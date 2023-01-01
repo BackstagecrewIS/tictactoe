@@ -19,8 +19,7 @@ let omoves = [];        // Define empty player O moves array
 let xmoves = [];        // Define empty player X moves array
 let playedMoves = [];   // Define empty moves array
 let gameOver = false;   // End of game check
-
-playerTurn = "O";       // Set the player O to begin the first game
+let playerTurn = "O";   // Set the player O to begin the first game
 
 // ---------------------------------------- New Game
 
@@ -34,6 +33,7 @@ function newGame() {
   } else {
     playerTurn = "O";
   }
+  displayPlayerTurn(playerTurn);
 }
 
 // ---------------------------------------- Clear board
@@ -66,13 +66,19 @@ function addGameCounter() {
 // ---------------------------------------- Display player turn
 
 function displayPlayerTurn(player) {
-let moveDisplay = document.getElementById('playerToPlay');
-moveDisplay.innerHTML=`${player} to play`;
+    let moveDisplay = document.getElementById('playerToPlay');
+  if (!gameOver) {
+    moveDisplay.innerHTML=`${player} to play`;
+  } else {
+    moveDisplay.innerHTML="Click New Game to Play again";
+  }
+
 }
 
 // ---------------------------------------- Player move
 
 document.addEventListener('DOMContentLoaded', function() {
+  displayPlayerTurn(playerTurn);
   let squares = document.getElementsByClassName('square');
   for (let square of squares) {
     square.addEventListener("click", function() {
@@ -83,16 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (checkMove(playedSquare)) {
           this.textContent = "O";
           omoves.push(playedSquare);
-          console.log("Square", playedSquare);
-          console.log("Omoves", omoves);
           checkForWin();
         };
       } else {
         if (checkMove(playedSquare)) {
           this.textContent = "X";
           xmoves.push(playedSquare);
-          console.log("Square", playedSquare);
-          console.log("Xmoves", xmoves);
           checkForWin();
         };
       };
@@ -152,12 +154,16 @@ function checkForWin() {
           let winningLine = win;
           displayWinningLine(winningLine);
           addOWin();
+          alert("O Wins");
+          gameOver = true;
       }
       
       if (checkSubset(xmoves, win)) {
         let winningLine = win;
         displayWinningLine(winningLine);
         addXWin();
+        alert("X Wins");
+        gameOver = true;
       }
 
       
@@ -172,6 +178,7 @@ function checkForDraw() {
   console.log("MOVES: ", playedMoves.length);
   if (!gameOver && playedMoves.length == 9) {
     alert("It's a DRAW");
+    gameOver = true;
   }
 }
 
