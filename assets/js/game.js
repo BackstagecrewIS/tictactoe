@@ -110,21 +110,22 @@ document.addEventListener('DOMContentLoaded', function() {
       };
 // ---------------------------------------- Button listeners
 
-      // let buttons = document.getElementsByTagName('button');
-      // for (let button of buttons) {
-      //     button.addEventListener("click", function() {
-      //         if (this.getAttribute("data-type") === "new-game") {
-      //             newGame();
-      //         } else if (this.getAttribute("data-type") === "instructions") {
-      //             showInstructions(); 
-      //         } else if (this.getAttribute("data-type") === "reset") {
-      //             console.log("Reset");
-      //         } else {
-      //             console.log("ERROR");
-      //         };
+      let buttons = document.getElementsByClassName('control');
+      for (let button of buttons) {
+          button.addEventListener("click", function() {
+              if (this.getAttribute("data-type") === "new-game") {
+                  newGame();
+              } else if (this.getAttribute("data-type") === "instructions") {
+                $('#modal').modal('show');
+                  console.log("Instructions");
+              } else if (this.getAttribute("data-type") === "reset") {
+                  console.log("Reset");
+              } else {
+                  console.log("BUTTON ERROR");
+              };
   
-      //     }); 
-      // };   
+          }); 
+      };   
 });
 
 // ---------------------------------------- Check for valid move
