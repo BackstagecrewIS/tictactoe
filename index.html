@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/f80fe9b438.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/game.js"></script>
     <title>Noughts And Crosses</title>
 </head>
@@ -25,25 +28,25 @@
             <button type="button" data-type = "new-game" class="btn btn-success" id="new_game">New Game</button>
           </div>
           <div class="col-6">
-            <button type="button" data-type = "instructions" class="btn btn-info" id="instructions">Instructions</button>
+            <button type="button" data-type = "instructions" class="btn btn-info" data-toggle="modal" data-target="#modal">Instructions</button>
           </div>
         </div>
     </div>
     <section>
         <div class="row game-board">
-            <div id="1" class="square game-square-1 col"><span></span></div>
-            <div id="2" class="square game-square-2 col"><span></span></div>
-            <div id="3" class="square game-square-3 col"><span></span></div>
+            <div id="1" class="square game-square-1 col-2"><span></span></div>
+            <div id="2" class="square game-square-2 col-2"><span></span></div>
+            <div id="3" class="square game-square-3 col-2"><span></span></div>
         </div>
         <div class="row game-board">
-            <div id="4" class="square game-square-4 col"><span></span></div>
-            <div id="5" class="square game-square-5 col"><span></span></div>
-            <div id="6" class="square game-square-6 col"><span></span></div>
+            <div id="4" class="square game-square-4 col-2"><span></span></div>
+            <div id="5" class="square game-square-5 col-2"><span></span></div>
+            <div id="6" class="square game-square-6 col-2"><span></span></div>
         </div>
         <div class="row game-board">
-            <div id="7" class="square game-square-7 col"><span></span></div>
-            <div id="8" class="square game-square-8 col"><span></span></div>
-            <div id="9" class="square game-square-9 col"><span></span></div>
+            <div id="7" class="square game-square-7 col-2"><span></span></div>
+            <div id="8" class="square game-square-8 col-2"><span></span></div>
+            <div id="9" class="square game-square-9 col-2"><span></span></div>
         </div>
     </section>
 
@@ -73,6 +76,35 @@
           </div>
         </div>
     </div>  
+    <!-- Modal popup instructions -->
+    <div class="modal fade" id="modal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Instructions</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>How to play Noughts and Crosses</p>
+                <p>This is a two player game where players take turns to place their marker (O or X) 
+                    into one of the nine squares on the board. 
+                    The winner is the first player to place three markers on a line.</p>
+                <p>When a player wins, or the game is drawn, click the new game button to play again.</p>
+                <p>The game keeps score of each player's wins after each game.</p>
+                <p>The first turn is alternated between players to ensure fairness.</p>
+                <p>To start a new series of games, press the reset scores button. 
+                    This will zero both win counters and start a new game</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
     <footer>
         
     </footer>

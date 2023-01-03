@@ -112,21 +112,21 @@ document.addEventListener('DOMContentLoaded', function() {
       };
 // ---------------------------------------- Button listeners
 
-      let buttons = document.getElementsByTagName('button');
-      for (let button of buttons) {
-          button.addEventListener("click", function() {
-              if (this.getAttribute("data-type") === "new-game") {
-                  newGame();
-              } else if (this.getAttribute("data-type") === "instructions") {
-                  showInstructions(); 
-              } else if (this.getAttribute("data-type") === "reset") {
-                  console.log("Reset");
-              } else {
-                  console.log("ERROR");
-              };
+      // let buttons = document.getElementsByTagName('button');
+      // for (let button of buttons) {
+      //     button.addEventListener("click", function() {
+      //         if (this.getAttribute("data-type") === "new-game") {
+      //             newGame();
+      //         } else if (this.getAttribute("data-type") === "instructions") {
+      //             showInstructions(); 
+      //         } else if (this.getAttribute("data-type") === "reset") {
+      //             console.log("Reset");
+      //         } else {
+      //             console.log("ERROR");
+      //         };
   
-          }); 
-      };   
+      //     }); 
+      // };   
 });
 
 // ---------------------------------------- Check for valid move

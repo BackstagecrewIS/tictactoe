@@ -16,8 +16,10 @@ h1, h2 {
 
 /*------------------------- Game Board ----------------------- */
 
-.game-board {
-    height: 75px;
+.game-board, row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
 }
 
 .square {
