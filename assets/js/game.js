@@ -69,8 +69,6 @@ function displayPlayerTurn(player) {
     let moveDisplay = document.getElementById('playerToPlay');
   if (!gameOver) {
     moveDisplay.innerHTML=`${player} to play`;
-  } else {
-    moveDisplay.innerHTML="Click New Game to Play again";
   }
 
 }
@@ -154,16 +152,20 @@ function checkForWin() {
           let winningLine = win;
           displayWinningLine(winningLine);
           addOWin();
-          alert("O Wins");
+        
           gameOver = true;
+  
+          gameEnd("O wins");
       }
       
       if (checkSubset(xmoves, win)) {
         let winningLine = win;
         displayWinningLine(winningLine);
         addXWin();
-        alert("X Wins");
+        
         gameOver = true;
+
+        gameEnd("X wins");
       }
 
       
@@ -177,8 +179,10 @@ function checkForDraw() {
   console.log("Game Over? : ", gameOver);
   console.log("MOVES: ", playedMoves.length);
   if (!gameOver && playedMoves.length == 9) {
-    alert("It's a DRAW");
+        
     gameOver = true;
+
+    gameEnd("It's a draw");
   }
 }
 
@@ -232,3 +236,9 @@ function displayWinTotals() {
   xTotal.innerHTML=`X wins : ${xWins} `;
   }
   
+// ---------------------------------------- Game end messages
+
+function gameEnd(result) {
+  let message = document.getElementById('playerToPlay');
+  message.innerHTML = result;
+}
