@@ -80,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
   let squares = document.getElementsByClassName('square');
   for (let square of squares) {
     square.addEventListener("click", function() {
-      
     playedSquare = parseInt(square.id);
 
       if (playerTurn == "O") {
