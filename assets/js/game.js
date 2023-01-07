@@ -117,9 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   newGame();
               } else if (this.getAttribute("data-type") === "instructions") {
                 $('#modal').modal('show');
-                  console.log("Instructions");
               } else if (this.getAttribute("data-type") === "reset") {
-                  console.log("Reset");
+                  resetScores();
               } else {
                   console.log("BUTTON ERROR");
               };
@@ -242,4 +241,10 @@ function displayWinTotals() {
 function gameEnd(result) {
   let message = document.getElementById('playerToPlay');
   message.innerHTML = result;
+}
+
+function resetScores() {
+  xWins = 0;
+  oWins = 0;
+  displayWinTotals();
 }
