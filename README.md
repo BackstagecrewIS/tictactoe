@@ -35,23 +35,28 @@ It is designed to be used on any device.
     a. As a frequent user, I want to be able to play an opponent multiple times with an equal chance of either of us winning.
     
     b. As a frequent user, I want to be able to play different opponents.
+    
 
 * Design Considerations
   - Colour Scheme
   
   The colour scheme reflects the fact that this is a simple pen and paper game, so the game uses a black and white design. This is high contrast and easier to see for people with visual impairment.
+  To make the control buttons more visible, they will be coloured forest green with white text.
+  The messages tell the user the current player's turn and also the result of the game. These will be yellow text on a black background to differentiate theem from the buttons.
+  To hignlight the cursor position furing game play, the squares will change colour to pink when the mouse moves over them and return to white when the cursor moves out.
     
     
   - Typography
     
-    
+    For simplicity, only one font style will be used. The Poppins font is a clear sans-serif font which works well for all elements of the game.
     
   - Imagery
   
-  
-  
+    There are no images used in the game. The game board is simply a set of divs with borders set as required to make the traditional game board
+    
   - Wireframes
-
+  
+  ![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
 
 
 ## Design Strategy
@@ -84,13 +89,11 @@ The game will be ready to play on loading for the first time.
 
 There will be a button to start a new game.
 
-There will be a button which pops up a window with the game instructions.
-
-The game will show which player's turn is in progress.
-
-#### Could Have
+There will be a button which pops up a modal with the game instructions.
 
 The game should tell the users whose turn it is to play.
+
+#### Could Have
 
 The game should alternate whose turn it is to start.
 
@@ -127,12 +130,8 @@ Future Development:
 
 The information should be grouped by;
 
-* The main page contains the game and control buttons.
-* Instructions are on a separate pop-up which is accessed by pressing the instructions button.
-
-
-
-
+* The main page contains the game and control buttons. The scores and all controls are all on the main page.
+* Instructions are on a modal which is accessed by pressing the instructions button. This pops up over the game screen and disappears when closed. 
 
 ### The skeleton plane:
 **How will our information be represented, and how will the user navigate to the information and the features?**
@@ -166,7 +165,7 @@ Navigation and use of the website must be intuitive allowing the user to be able
 
 [CSS3](https://en.wikipedia.org/wiki/CSS)
 
-[JavaScript]
+[JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Frameworks, Libraries & Programs Used
 
@@ -175,13 +174,9 @@ Bootstrap was used to assist with the responsiveness and styling of the website.
 
 [Google Fonts:](https://fonts.google.com/)
 Google fonts were used to import the 'Poppins' font into the style.css file which is used on all pages throughout the project.
-The pub sign in the header uses 'Hahmlet' font because it is a close match to the font used on the actual pub sign.
-
-[Font Awesome:](https://fontawesome.com/)
-Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
 jQuery:
-jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+jQuery is used to make the modal function.
 
 [Git](https://git-scm.com/)
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -189,14 +184,12 @@ Git was used for version control by utilizing the Gitpod terminal to commit to G
 [GitHub:](https://github.com/)
 GitHub is used to store the projects code after being pushed from Git.
 
-[Adobe Fireworks CS6:](https://www.adobe.com)
-Fireworks CS6 was used to create the logo, resizing images and editing photos for the website.
-
 [Balsamiq:](https://balsamiq.com/)
 Balsamiq was used to create the wireframes during the design process.
 
 ## Image Credits
 
+  No images are used
 
 ## Testing
 
