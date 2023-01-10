@@ -195,9 +195,9 @@ Balsamiq was used to create the wireframes during the design process.
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-W3C Markup Validator - Results link
+W3C Markup Validator - Results [link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F)
 
-W3C CSS Validator - Results link
+W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 Testing User Stories from User Experience (UX) Section
 
@@ -236,7 +236,7 @@ Known Bugs
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/BackstagecrewIS)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section on the left column.
 4. Under "Source", select 'Deploy from Branch then click the dropdown called "None" and select "Main".
