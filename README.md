@@ -1,5 +1,5 @@
 <h1 align="center">Noughts and Crosses</h1>
-[Link to the live website when built]
+[Link to the deployed site](https://backstagecrewis.github.io/tictactoe/)
 
 A basic website for a Noughts and Crosses game using HTML, CSS and a Bootstrap framework with Javascript functions to run the game.
 It is designed to be used on any device.
@@ -229,4 +229,17 @@ A large amount of testing was done to ensure that all pages were linking correct
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 Known Bugs
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section on the left column.
+4. Under "Source", select 'Deploy from Branch then click the dropdown called "None" and select "Main".
+5. Click Save to confirm the choice.
+6. Scroll back to the top of the page to locate the link to the published site in the "GitHub Pages" section.
 
