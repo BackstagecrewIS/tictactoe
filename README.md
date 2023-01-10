@@ -4,7 +4,7 @@
 A basic website for a Noughts and Crosses game using HTML, CSS and a Bootstrap framework with Javascript functions to run the game.
 It is designed to be used on any device.
 
-![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
+![The Game](/assets/wireframes/responsive.jpg "Noughts and Crosses game")
 
 #### Table of Contents
 
@@ -222,9 +222,9 @@ Further Testing
 
 The Website was tested on Google Chrome ...
 
-The website was viewed on a variety of devices such as ...
+The website was viewed on a variety of devices using [Responsive Design Checkers](http://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&width=1400&height=700) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://backstagecrewis.github.io/tictactoe/)
 
-A large amount of testing was done to ensure that all pages were linking correctly.
+A large amount of testing was done to ensure that the game functions correctly.
 
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
