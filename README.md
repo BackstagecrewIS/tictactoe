@@ -203,16 +203,17 @@ W3C Markup Validator - Results [link](https://validator.w3.org/nu/?doc=https%3A%
 
 W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-#### Testing User Stories from User Experience (UX) Section
+## Testing User Stories from User Experience (UX) Section
 
-##### First Time Visitor Goals
-
+* ### User Stories
+  - #### First Time Visitor Goals
+  
     a. As a first time visitor, I want to learn how to play the game.
     
     The instructions button is on the game screen and opens a modal with game instructions. when closed, the game is ready to play.
-
-##### Returning Visitor Goals
-
+    
+  - #### Returning Visitor Goals
+  
     a. As a returning visitor, I want to be able to play the game immediately.
     
     As soon as the page loads, the game is ready to play.
@@ -221,8 +222,8 @@ W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator
     
     The game records and displays the number of wins for each player and updates after each game.
     
-##### Frequent User Goals
-
+  - #### Frequent User Goals
+  
     a. As a frequent user, I want to be able to play an opponent multiple times with an equal chance of either of us winning.
     
     The first move alternates between players at the start of each new game.
@@ -230,8 +231,6 @@ W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator
     b. As a frequent user, I want to be able to play different opponents.
     
     If a different opponent is needed, the game scores can be reset using the reset scores button.
-  
-
 
 #### Further Testing
 
