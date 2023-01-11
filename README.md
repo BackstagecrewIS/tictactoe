@@ -3,11 +3,12 @@
 [Link to the deployed site](https://backstagecrewis.github.io/tictactoe/ "Link to game")
 
 A basic website for a Noughts and Crosses game using HTML, CSS and a Bootstrap framework with Javascript functions to run the game.
+
 It is designed to be used on any device.
 
 ![The Game](/assets/wireframes/responsive.jpg "Noughts and Crosses game")
 
-#### Table of Contents
+## Table of Contents
 
 - [User Experience UX](#user-experience-ux)
 - [Design Strategy](#design-strategy)
@@ -25,7 +26,7 @@ It is designed to be used on any device.
     
   - #### Returning Visitor Goals
   
-    a. As a returning visitor, I want to be able to play the game immediately.
+    a. As a returning visitor, I want to be able to play the game immediately without having to read the instructions.
     
     b. As a returning visitor, I want to be able to play an opponent multiple times and keep score.
     
@@ -38,14 +39,17 @@ It is designed to be used on any device.
 * Design Considerations
   - Colour Scheme
   
-  The colour scheme reflects the fact that this is a simple pen and paper game, so the game uses a black and white design. This is high contrast and easier to see for people with visual impairment.
+  The colour scheme reflects the fact that this is a simple pen and paper game, so the game mainly uses a black and white design. This is high contrast and easier to see for people with visual impairment.
+
   To make the control buttons more visible, they will be coloured forest green with white text.
+
   The messages tell the user the current player's turn and also the result of the game. These will be yellow text on a black background to differentiate theem from the buttons.
-  To hignlight the cursor position furing game play, the squares will change colour to pink when the mouse moves over them and return to white when the cursor moves out.
+  
+  To hignlight the cursor position during game play, the squares will change colour to pink when the mouse moves over them and return to white when the cursor moves out.
     
   - Typography
     
-    For simplicity, only one font style will be used. The Poppins font is a clear sans-serif font which works well for all elements of the game.
+    For simplicity, only one font style will be used. The Poppins font is a clear sans-serif font which works well for all elements of the game. The fallback sans-serif is specified in case the Poppins font fails to load.
     
   - Imagery
   
@@ -55,6 +59,9 @@ It is designed to be used on any device.
   
   ![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
 
+  ![Instructions](/assets/wireframes/wireframe-instructions.jpg "Game instructions modal")
+
+[Back to Index](#table-of-contents)
 
 ## Design Strategy
 
@@ -84,7 +91,7 @@ There must be instructions for the user.
 
 The game will be ready to play on loading for the first time.
 
-There will be a button to start a new game.
+There will be a button to start a new game after a game has finished.
 
 There will be a button which pops up a modal with the game instructions.
 
@@ -116,7 +123,7 @@ For the initial build, this site will incorporate:
 * A display of the cumulative scores for each player.
 * A display of whose turn it is to play
 * A way to reset the scores.
-* The game must alternate the player who takes the first move. This will make the game fair as the player with the first move has the advantage.
+* The game will alternate the player who takes the first move. This will make the game fair as the player with the first move has the advantage.
 
 Future Development:
 * A way of keeping the scores between sessions, possibly using cookies.
@@ -134,7 +141,9 @@ The information should be grouped by;
 ### The skeleton plane:
 **How will our information be represented, and how will the user navigate to the information and the features?**
 
-index.html will contain the game and all controls.
+index.html will contain the game board and all controls.
+
+game.js containg all of the game functions to operate the game.
 
 A modal will contain the game instructions.
 
@@ -142,17 +151,20 @@ There will be no additional pages so there is no requirement for additional navi
 
 ### The surface plane:
 **What will the finished product look like? What colors, typography, and design elements will we use?**
-Wireframes for each of the pages are below:
+
+Wireframes for the game display and instructions modals are below:
 
 ![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
 
 ![Instructions](/assets/wireframes/wireframe-instructions.jpg "Game instructions modal")
 
-The game will be in black & white with breen coloured control buttons.
+The game will be in black & white with green coloured control buttons.
 
 Messages will be yellow on a black background.
 
 The mouse cursor will be highlighted in pink as the cursor passes over a square to make it clear which square will be played
+
+[Back to Index](#table-of-contents)
 
 ## Features
 
@@ -160,7 +172,9 @@ The mouse cursor will be highlighted in pink as the cursor passes over a square 
 The site must be designed to work on on all devices from mobile to desktop.
 
 ### Intuitive
-Navigation and use of the website must be intuitive allowing the user to be able to use the website without instructions
+Navigation and use of the website must be intuitive allowing the user to be able to navigate the site without instructions
+
+[Back to Index](#table-of-contents)
 
 ## Technologies Used
 
@@ -179,21 +193,20 @@ Bootstrap was used to assist with the responsiveness and styling of the website.
 [Google Fonts:](https://fonts.google.com/)
 Google fonts were used to import the 'Poppins' font into the style.css file which is used on all pages throughout the project.
 
-jQuery:
-jQuery is used to make the modal function.
+[jQuery:](https://en.wikipedia.org/wiki/JQuery) is used to make the modal function.
 
-[Git](https://git-scm.com/)
-Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+[Git:](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
-[GitHub:](https://github.com/)
-GitHub is used to store the projects code after being pushed from Git.
+[GitHub:](https://github.com/) is used to store the projects code after being pushed from Git.
 
 [Balsamiq:](https://balsamiq.com/)
 Balsamiq was used to create the wireframes during the design process.
 
 ## Image Credits
 
-  No images are used
+No images are used
+
+[Back to Index](#table-of-contents)
 
 ## Testing
 
@@ -232,7 +245,7 @@ W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator
     
     If a different opponent is needed, the game scores can be reset using the reset scores button.
 
-#### Further Testing
+### Further Testing
 
 The Website was tested on Google Chrome on both a laptop and mobile phone for functionality
 
@@ -244,7 +257,11 @@ Some testing was carried out using Jest to test that Jest was installed correctl
 
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-#### Known Bugs
+### Known Bugs
+
+None found
+
+[Back to Index](#table-of-contents)
 
 ## Deployment
 
@@ -259,3 +276,4 @@ The project was deployed to GitHub Pages using the following steps...
 5. Click Save to confirm the choice.
 6. Scroll back to the top of the page to locate the link to the published site in the "GitHub Pages" section.
 
+[Back to Index](#table-of-contents)
