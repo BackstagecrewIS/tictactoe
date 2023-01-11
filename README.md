@@ -1,5 +1,6 @@
 <h1 align="center">Noughts and Crosses</h1>
-[Link to the deployed site](https://backstagecrewis.github.io/tictactoe/)
+
+[Link to the deployed site](https://backstagecrewis.github.io/tictactoe/ "Link to game")
 
 A basic website for a Noughts and Crosses game using HTML, CSS and a Bootstrap framework with Javascript functions to run the game.
 It is designed to be used on any device.
@@ -11,9 +12,9 @@ It is designed to be used on any device.
 - [User Experience UX](#user-experience-ux)
 - [Design Strategy](#design-strategy)
 - [Features](#features)
-- [Technologies Used](#Technologies-Used)
-- [Testing](#Testing)
-- [Deployment](#Deployment)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
 
 ## User Experience (UX)
 
