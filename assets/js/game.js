@@ -22,6 +22,29 @@ let gameOver = false; // End of game check
 let playerTurn = "O"; // Set the player O to begin the first game
 let playedSquare;
 
+// ---------------------------------------- Start Game
+
+document.addEventListener('DOMContentLoaded', function () {
+  displayPlayerTurn(playerTurn);
+  initialiseListeners();
+  
+// ---------------------------------------- Button listeners
+
+  let buttons = document.getElementsByClassName('control');
+  for (let button of buttons) {
+    button.addEventListener("click", function () {
+        if (this.getAttribute("data-type") === "new-game") {
+            newGame();
+        } else if (this.getAttribute("data-type") === "instructions") {
+            $('#modal').modal('show');
+        } else if (this.getAttribute("data-type") === "reset") {
+            resetScores();
+        }
+    });
+  }
+
+})
+
 // ---------------------------------------- New Game
 
 function newGame() {
@@ -35,6 +58,7 @@ function newGame() {
       playerTurn = "O";
   }
   displayPlayerTurn(playerTurn);
+  initialiseListeners();
 }
 
 // ---------------------------------------- Clear board
@@ -73,29 +97,6 @@ function displayPlayerTurn(player) {
   }
 
 }
-
-// ---------------------------------------- Start Game
-
-document.addEventListener('DOMContentLoaded', function () {
-  displayPlayerTurn(playerTurn);
-  initialiseListeners();
-  
-// ---------------------------------------- Button listeners
-
-  let buttons = document.getElementsByClassName('control');
-  for (let button of buttons) {
-    button.addEventListener("click", function () {
-        if (this.getAttribute("data-type") === "new-game") {
-            newGame();
-        } else if (this.getAttribute("data-type") === "instructions") {
-            $('#modal').modal('show');
-        } else if (this.getAttribute("data-type") === "reset") {
-            resetScores();
-        }
-    });
-  }
-
-})
 
 // ----------------------------------------- Initialise Listeners
 
