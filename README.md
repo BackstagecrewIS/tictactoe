@@ -279,6 +279,32 @@ The project was deployed to GitHub Pages using the following steps...
 
 [Back to Index](#table-of-contents)
 
+
+### Forking the GitHub Repository
+
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project by using the following steps
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page) above the Settings Button on the menu, click the Fork Button.
+3. Scroll down the pake and click the Create Fork button to make a copy.
+4. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click the Code button next to the green Gitpod button.
+3. To clone the repository using HTTPS, under the HTTPS tab, copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+7. Press Enter. Your local clone will be created.
+
+Click [Here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) for the Github tutorial.
+
 ## Credits
 
 Modal code sourced from [W3 Schools](https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp) and adapted to the requirements.
