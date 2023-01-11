@@ -86,8 +86,8 @@ h2, h3 {
 /*------------------------- Buttons ----------------------- */
 
 #top-buttons, bottom-button {
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     
 }
 
@@ -116,4 +116,11 @@ h2, h3 {
     color: yellow;
 }
 
+#scores {
+    margin: 5px;
+}
 
+footer div {
+    margin: 0 auto;
+    padding-top: 5px;
+}
