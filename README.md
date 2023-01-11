@@ -44,9 +44,9 @@ It is designed to be used on any device.
 
   To make the control buttons more visible, they will be coloured forest green with white text.
 
-  The messages tell the user the current player's turn and also the result of the game. These will be yellow text on a black background to differentiate theem from the buttons.
+  The messages tell the user the current player's turn and also the result of the game. These will be yellow text on a black background to differentiate them from the buttons.
   
-  To hignlight the cursor position during game play, the squares will change colour to pink when the mouse moves over them and return to white when the cursor moves out.
+  To highlight the cursor position during game play, the squares will change colour to pink when the mouse moves over them and return to white when the cursor moves out.
     
   - Typography
     
@@ -84,7 +84,7 @@ The game should have a reset function to set the scores back to zero to allow fo
 ### The scope plane:
 **Which features, based on information from the strategy plane, do you want to include in your design?**
 
-#### Must Have
+**Must Have**
 
 The game must work.
 
@@ -98,7 +98,7 @@ There will be a button which pops up a modal with the game instructions.
 
 The game should tell the users whose turn it is to play.
 
-#### Could Have
+**Could Have**
 
 The game should alternate whose turn it is to start.
 
@@ -106,17 +106,15 @@ The game should keep score.
 
 There should be a button to reset the score counters.
 
-
-#### Future plans
+**Future plans**
 A future version could save the scores between sessions to allow the series of games to be resumed at a later stage.
 
 A future version could have a single player option where the user can play against the computer.
 
-
-#### Usability
+**Usability**
 Users are assumed to be accessing the site on a mobile device so the site should adopt a mobile first design.
 
-Users should be able to navigate the site without difficulty so navigation should be intuitive.
+Users should be able to navigate the site without difficulty, so navigation should be intuitive.
 
 For the initial build, this site will incorporate:
 * The game.
@@ -126,10 +124,9 @@ For the initial build, this site will incorporate:
 * A way to reset the scores.
 * The game will alternate the player who takes the first move. This will make the game fair as the player with the first move has the advantage.
 
-Future Development:
+**Future Development:**
 * A way of keeping the scores between sessions, possibly using cookies.
 * A way to play against the computer in single player mode.
-
 
 ### The structure plane:
 **How is the information structured and how is it logically grouped?**
@@ -260,7 +257,8 @@ Friends and family members were asked to review the site and documentation to po
 
 ### Known Bugs
 
-None found
+The game
+
 
 [Back to Index](#table-of-contents)
 
@@ -286,7 +284,7 @@ A fork is a copy of a repository. Forking a repository allows you to freely expe
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page) above the Settings Button on the menu, click the Fork Button.
-3. Scroll down the pake and click the Create Fork button to make a copy.
+3. Scroll down the page and click the Create Fork button to make a copy.
 4. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
