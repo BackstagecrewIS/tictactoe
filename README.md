@@ -101,6 +101,7 @@ There should be a button to reset the score counters.
 
 #### Future plans
 A future version could save the scores between sessions to allow the series of games to be resumed at a later stage.
+
 A future version could have a single player option where the user can play against the computer.
 
 
@@ -135,7 +136,7 @@ The information should be grouped by;
 
 index.html will contain the game and all controls.
 
-A pop-up window will contain the game instructions.
+A modal will contain the game instructions.
 
 There will be no additional pages so there is no requirement for additional navigation.
 
@@ -146,6 +147,12 @@ Wireframes for each of the pages are below:
 ![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
 
 ![Instructions](/assets/wireframes/wireframe-instructions.jpg "Game instructions modal")
+
+The game will be in black & white with breen coloured control buttons.
+
+Messages will be yellow on a black background.
+
+The mouse cursor will be highlighted in pink as the cursor passes over a square to make it clear which square will be played
 
 ## Features
 
@@ -190,42 +197,55 @@ Balsamiq was used to create the wireframes during the design process.
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
 
 W3C Markup Validator - Results [link](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F)
 
 W3C CSS Validator - Results [link](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-Testing User Stories from User Experience (UX) Section
+#### Testing User Stories from User Experience (UX) Section
 
-First Time Visitor Goals
+##### First Time Visitor Goals
 
-As a First Time Visitor, ...
+    a. As a first time visitor, I want to learn how to play the game.
+    
+    The instructions button is on the game screen and opens a modal with game instructions. when closed, the game is ready to play.
 
-As a First Time Visitor, ...
+##### Returning Visitor Goals
 
-As a First Time Visitor, ...
+    a. As a returning visitor, I want to be able to play the game immediately.
+    
+    As soon as the page loads, the game is ready to play.
+    
+    b. As a returning visitor, I want to be able to play an opponent multiple times and keep score.
+    
+    The game records and displays the number of wins for each player and updates after each game.
+    
+##### Frequent User Goals
 
-Returning Visitor Goals
+    a. As a frequent user, I want to be able to play an opponent multiple times with an equal chance of either of us winning.
+    
+    The first move alternates between players at the start of each new game.
+    
+    b. As a frequent user, I want to be able to play different opponents.
+    
+    If a different opponent is needed, the game scores can be reset using the reset scores button.
+  
 
-As a Returning Visitor, ...
 
-Frequent User Goals
-
-As a Frequent User, ...
-
-
-Further Testing
+#### Further Testing
 
 The Website was tested on Google Chrome on both a laptop and mobile phone for functionality
 
 The responsivity of the website was checked on a variety of devices using [Responsive Design Checkers](http://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&width=1400&height=700) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://backstagecrewis.github.io/tictactoe/)
 
-A large amount of testing was done to ensure that the game functions correctly.
+A large amount of manual testing was done to ensure that the game functions correctly.
+
+Some testing was carried out using Jest to test that Jest was installed correctly
 
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-Known Bugs
+#### Known Bugs
 
 ## Deployment
 
