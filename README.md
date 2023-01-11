@@ -15,7 +15,6 @@ It is designed to be used on any device.
 - [Testing](#Testing)
 - [Deployment](#Deployment)
 
-
 ## User Experience (UX)
 
 * ### User Stories
@@ -23,7 +22,6 @@ It is designed to be used on any device.
   
     a. As a first time visitor, I want to learn how to play the game.
     
-
   - #### Returning Visitor Goals
   
     a. As a returning visitor, I want to be able to play the game immediately.
@@ -36,7 +34,6 @@ It is designed to be used on any device.
     
     b. As a frequent user, I want to be able to play different opponents.
     
-
 * Design Considerations
   - Colour Scheme
   
@@ -44,7 +41,6 @@ It is designed to be used on any device.
   To make the control buttons more visible, they will be coloured forest green with white text.
   The messages tell the user the current player's turn and also the result of the game. These will be yellow text on a black background to differentiate theem from the buttons.
   To hignlight the cursor position furing game play, the squares will change colour to pink when the mouse moves over them and return to white when the cursor moves out.
-    
     
   - Typography
     
@@ -220,9 +216,9 @@ As a Frequent User, ...
 
 Further Testing
 
-The Website was tested on Google Chrome ...
+The Website was tested on Google Chrome on both a laptop and mobile phone for functionality
 
-The website was viewed on a variety of devices using [Responsive Design Checkers](http://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&width=1400&height=700) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://backstagecrewis.github.io/tictactoe/)
+The responsivity of the website was checked on a variety of devices using [Responsive Design Checkers](http://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fbackstagecrewis.github.io%2Ftictactoe%2F&width=1400&height=700) and [AmIResponsive](https://ui.dev/amiresponsive?url=https://backstagecrewis.github.io/tictactoe/)
 
 A large amount of testing was done to ensure that the game functions correctly.
 
