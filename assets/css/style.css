@@ -91,10 +91,6 @@ h2, h3 {
     
 }
 
-.btn-sm {
-    background-color: forestgreen;
-    color: white;
-}
 
 #new-game {
     width: 50%;
@@ -116,6 +112,11 @@ h2, h3 {
     color: yellow;
 }
 
+.btn-sm {
+    background-color: forestgreen;
+    color: white;
+}
+
 #scores {
     margin: 5px;
 }
@@ -123,4 +124,5 @@ h2, h3 {
 footer div {
     margin: 0 auto;
     padding-top: 5px;
+    text-align: center;
 }
