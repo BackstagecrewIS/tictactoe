@@ -82,21 +82,20 @@ document.addEventListener('DOMContentLoaded', function () {
   
 // ---------------------------------------- Button listeners
 
-let buttons = document.getElementsByClassName('control');
-for (let button of buttons) {
-  button.addEventListener("click", function () {
-      if (this.getAttribute("data-type") === "new-game") {
-          newGame();
-      } else if (this.getAttribute("data-type") === "instructions") {
-          $('#modal').modal('show');
-      } else if (this.getAttribute("data-type") === "reset") {
-          resetScores();
-      }
-  });
-}
-  
-})
+  let buttons = document.getElementsByClassName('control');
+  for (let button of buttons) {
+    button.addEventListener("click", function () {
+        if (this.getAttribute("data-type") === "new-game") {
+            newGame();
+        } else if (this.getAttribute("data-type") === "instructions") {
+            $('#modal').modal('show');
+        } else if (this.getAttribute("data-type") === "reset") {
+            resetScores();
+        }
+    });
+  }
 
+})
 
 // ----------------------------------------- Initialise Listeners
 
@@ -119,6 +118,7 @@ function initialiseListeners() {
               }
           }
       });
+
 // ---------------------------------------- Highlight cursor 
 
       square.addEventListener("mouseover", function () {
@@ -196,8 +196,8 @@ function checkForDraw() {
   }
 }
 
-
 // ---------------------------------------- Check moves against winning combinations
+// Original code for function checkSubset() derived from https://dev.to/smpnjn/javascript-check-if-an-array-is-a-subset-of-another-array-950
 
 function checkSubset(movesArray, winsArray) {
   return winsArray.every((element) => {

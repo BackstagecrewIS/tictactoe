@@ -16,6 +16,7 @@ It is designed to be used on any device.
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
+- [Credits](#credits)
 
 ## User Experience (UX)
 
@@ -275,5 +276,15 @@ The project was deployed to GitHub Pages using the following steps...
 4. Under "Source", select 'Deploy from Branch then click the dropdown called "None" and select "Main".
 5. Click Save to confirm the choice.
 6. Scroll back to the top of the page to locate the link to the published site in the "GitHub Pages" section.
+
+[Back to Index](#table-of-contents)
+
+## Credits
+
+Modal code sourced from [W3 Schools](https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp) and adapted to the requirements.
+
+https://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp
+
+Thanks go to my mentor Narender Singh for advice and guidance.
 
 [Back to Index](#table-of-contents)
