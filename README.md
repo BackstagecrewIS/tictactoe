@@ -257,7 +257,14 @@ Friends and family members were asked to review the site and documentation to po
 
 ### Known Bugs
 
-The game
+Bug:
+When the game is over and the user clicks on New Game, the squares are not highlighting.
+
+Cause:
+This was because the removeListeners() function turns off the highlighting but the newGame() function did not turn them back on.
+
+Solution:
+Added the call to initialiseListeners() into the newGame() function.
 
 
 [Back to Index](#table-of-contents)
