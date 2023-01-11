@@ -143,9 +143,9 @@ There will be no additional pages so there is no requirement for additional navi
 **What will the finished product look like? What colors, typography, and design elements will we use?**
 Wireframes for each of the pages are below:
 
-<a href="/assets/wireframes/wireframe-main.jpg" target="_blank">Main game page wireframe</a>
+![The Game](/assets/wireframes/wireframe-main.jpg "Noughts and Crosses game")
 
-<a href="/assets/wireframes/wireframe-instructions.jpg" target="_blank">Game instructions page wireframe</a>
+![Instructions](/assets/wireframes/wireframe-instructions.jpg "Game instructions modal")
 
 ## Features
 
