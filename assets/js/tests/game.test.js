@@ -1,14 +1,14 @@
-const resetGame = require("../game");
+const resetScores = require("../game");
 
-describe ("Check resetGame function", () => {
-    test("The player O moves arrays should be empty", () => {
-        expect(omoves.length).toEqual(0);
+describe ("Check resetScores function", () => {
+    test("xWins should be 0", () => {
+        expect(xWins).toEqual(0);
     })
 });
 
-describe ("Check resetGame function", () => {
-    test("The player X moves arrays should be empty", () => {
-        expect(xmoves.length).toEqual(0);
+describe ("Check resetScores function", () => {
+    test("oWins should be 0", () => {
+        expect(oWins).toEqual(0);
     })
 });
 

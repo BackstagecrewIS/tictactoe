@@ -251,8 +251,6 @@ The responsivity of the website was checked on a variety of devices using [Respo
 
 A large amount of manual testing was done to ensure that the game functions correctly.
 
-Some testing was carried out using Jest to test that Jest was installed correctly
-
 Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
